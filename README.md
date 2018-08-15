@@ -1,6 +1,6 @@
 # Algorithms Library
 
-Here will be stored the collection of the most known algorithms such as
+Here will be stored a collection of the most known algorithms such as
 
 1. Graph algorithms
 2. Dynamic programming
