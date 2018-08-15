@@ -12,5 +12,5 @@ Here will be stored a collection of the most known algorithms such as
 Also here will be implemented unit tests for each algorithm.
 
 ### Currently implemented
-#### Searching and Sorting:
+##### Searching and Sorting:
 - insertion sort;
