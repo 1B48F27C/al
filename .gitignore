@@ -1,2 +1,4 @@
 .vs/*
 .nyc_output/*
+*/bin/*
+*/obj/*
