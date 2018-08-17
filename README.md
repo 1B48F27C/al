@@ -14,3 +14,4 @@ Also here will be implemented unit tests for each algorithm.
 ### Currently implemented
 ##### Searching and Sorting:
 - insertion sort;
+- selection sort;
