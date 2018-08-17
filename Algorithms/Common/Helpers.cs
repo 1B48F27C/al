@@ -8,7 +8,7 @@ namespace Algorithms.Common
         /// <summary>
         /// Swaps two values in an IList<T> collection given their indexes.
         /// </summary>
-        public static void Swap<T>(this IList<T> list, int firstIndex, int secondIndex)
+        public static void SwapIList<T>(this IList<T> list, int firstIndex, int secondIndex)
         {
             if (list.Count < 2 || firstIndex == secondIndex)   //This check is not required but Partition function may make many calls so its for perf reason
                 return;
@@ -21,7 +21,7 @@ namespace Algorithms.Common
         /// <summary>
         /// Swaps two values in an ArrayList<T> collection given their indexes.
         /// </summary>
-        public static void Swap<T>(this ArrayList<T> list, int firstIndex, int secondIndex)
+        public static void SwapArrayList<T>(this ArrayList<T> list, int firstIndex, int secondIndex)
         {
             if (list.Count < 2 || firstIndex == secondIndex)   //This check is not required but Partition function may make many calls so its for perf reason
                 return;
@@ -34,7 +34,7 @@ namespace Algorithms.Common
         /// <summary>
         /// Populates a collection with a specific value.
         /// </summary>
-        public static void Populate<T>(this IList<T> collection, T value)
+        public static void PopulateIList<T>(this IList<T> collection, T value)
         {
             if (collection == null)
                 return;

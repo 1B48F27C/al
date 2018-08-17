@@ -29,6 +29,9 @@ namespace DataStructures.Lists
         // The default capacity to resize to, when a minimum is lower than 5.
         private const int _defaultCapacity = 8;
 
+        // Determination of default equality comparer for this Type T
+        private Comparer<T> _comparer = Comparer<T>.Default;
+
         // The internal array of elements.
         // NOT A PROPERTY.
         private T[] _collection;
@@ -154,7 +157,6 @@ namespace DataStructures.Lists
                 return (Count == 0);
             }
         }
-
 
         /// <summary>
         /// Gets the first element in the list.
@@ -802,6 +804,23 @@ namespace DataStructures.Lists
             }
 
             return listAsString;
+        }
+
+
+        /// <summary>
+        /// Checks whether the List is sorted or not
+        /// </summary>
+        /// <returns></returns>
+        public bool IsSorted()
+        {
+            
+
+            bool isSorted = true;
+            for (int i = 0; i < _collection.Length; i++)
+            {
+                if (_comparer.Compare(_collection[i], _collection[i + 1]) > 0) isSorted = false;
+            }
+            return isSorted;
         }
 
 

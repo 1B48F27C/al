@@ -5,12 +5,12 @@ using Xunit;
 
 namespace UnitTest.AlgorithmsTests
 {
-    public static class InsertionSortForArrayListTest
+    public static class InsertionSortWithArrayListTest
     {
         [Fact]
         public static void DoTest()
         {
-            var list1 = new ArrayList<int>
+            var list = new ArrayList<int>
             {
                 23,
                 42,
@@ -28,11 +28,11 @@ namespace UnitTest.AlgorithmsTests
                 -98
             };
 
-            list1.InsertionSort<int>();
+            list.InsertionSort<int>();
             bool isListSorted = true;
-            for (int i = 0; i < list1.Count - 1; i++)
+            for (int i = 0; i < list.Count - 1; i++)
             {
-                if (list1[i] > list1[i+1])
+                if (list[i] > list[i+1])
                 {
                     isListSorted = false;
                     break;
@@ -43,4 +43,3 @@ namespace UnitTest.AlgorithmsTests
         }
     }
 }
-
