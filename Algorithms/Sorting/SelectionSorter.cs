@@ -26,9 +26,9 @@ namespace Algorithms.Sorting
                 }
                 if (minIndex != i)
                 {
-                    Helpers.SwapArrayList(list, i, minIndex);
-                    minIndex = i+1;
+                    Helpers.SwapArrayList(list, i, minIndex);   
                 }
+                minIndex = i + 1;
             }
         }
     }

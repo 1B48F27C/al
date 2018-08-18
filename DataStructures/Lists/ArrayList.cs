@@ -816,7 +816,7 @@ namespace DataStructures.Lists
             
 
             bool isSorted = true;
-            for (int i = 0; i < _collection.Length; i++)
+            for (int i = 0; i < Count - 1; i++)
             {
                 if (_comparer.Compare(_collection[i], _collection[i + 1]) > 0) isSorted = false;
             }

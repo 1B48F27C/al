@@ -5,7 +5,7 @@ using Xunit;
 
 namespace UnitTest.AlgorithmsTests
 {
-    public static class InsertionSortWithArrayListTest
+    public static class InsertionSortTest
     {
         [Fact]
         public static void DoTest()
@@ -29,17 +29,8 @@ namespace UnitTest.AlgorithmsTests
             };
 
             list.InsertionSort<int>();
-            bool isListSorted = true;
-            for (int i = 0; i < list.Count - 1; i++)
-            {
-                if (list[i] > list[i+1])
-                {
-                    isListSorted = false;
-                    break;
-                }
-            }
-
-            Assert.True(isListSorted);
+            
+            Assert.True(list.IsSorted());
         }
     }
 }
