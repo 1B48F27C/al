@@ -26,17 +26,7 @@ namespace UnitTests.AlgorithmsTests
 
             list.SelectionSort<int>();
 
-            bool isListSorted = true;
-            for (int i = 0; i < list.Count - 1; i++)
-            {
-                if (list[i] > list[i + 1])
-                {
-                    isListSorted = false;
-                    break;
-                }
-            }
-
-            Assert.True(isListSorted);
+            Assert.True(list.IsSorted());
         }
     }
 }
