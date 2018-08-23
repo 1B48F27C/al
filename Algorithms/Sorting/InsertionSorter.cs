@@ -23,7 +23,9 @@ namespace Algorithms.Sorting
                 for (int j = i; j > 0; j--)
                 {
                     if (comparer.Compare(list[j], list[j - 1]) < 0)
+                    {
                         Helpers.SwapArrayList(list, j, j - 1);
+                    }                        
                 }
             }
         }
