@@ -4,20 +4,20 @@ using Algorithms.Common;
 
 namespace Algorithms.Sorting
 {
-    /// <summary>
-    /// Implements the Insertion Sort algorithm over ArrayLists<T> and List<T>.
-    /// </summary>
     public static class InsertionSorter
     {
-
-        // The quick insertion sort algorithm.
-        // For the internal ArrayList<T>. Check the DataStructures.ArrayList.cs.
+        /// <summary>
+        /// Implements the InsertionSort over the ArrayList<T>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="comparer"></param>
         public static void InsertionSort<T>(this ArrayList<T> list, Comparer<T> comparer = null)
         {
-
             // If the comparer is Null, then initialize it using a default typed comparer
             comparer = comparer ?? Comparer<T>.Default;
 
+            // implementation of the insertion sorting
             for (int i = 1; i < list.Count; i++)
             {
                 for (int j = i; j > 0; j--)
