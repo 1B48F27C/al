@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using DataStructures.Lists;
+using Algorithms.Common;
 
 namespace Algorithms.Sorting
 {
@@ -22,11 +23,7 @@ namespace Algorithms.Sorting
                 for (int j = i; j > 0; j--)
                 {
                     if (comparer.Compare(list[j], list[j - 1]) < 0)
-                    {
-                        var temp = list[j - 1];
-                        list[j - 1] = list[j];
-                        list[j] = temp;
-                    }
+                        Helpers.SwapArrayList(list, j, j - 1);
                 }
             }
         }
