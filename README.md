@@ -15,3 +15,10 @@ Also here will be implemented unit tests for each algorithm.
 ##### Searching and Sorting:
 - insertion sort;
 - selection sort;
+- bubble sort;
+
+
+### Will be implemented next
+##### Searching and Sorting:
+- heap sort;
+- merge sort;
